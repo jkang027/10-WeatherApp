@@ -21,23 +21,25 @@
             <RowDefinition Height="4*"/>
             <RowDefinition Height="4*"/>
             <RowDefinition Height="4*"/>
-            <RowDefinition Height="12*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="8*"/>
         </Grid.RowDefinitions>
         <Button x:Name="SearchButton" Content="Search" Margin="0,10,10,10" RenderTransformOrigin="0.5,0.5" Click="SearchButton_Click" Grid.Column="3" HorizontalAlignment="Right" Width="123"/>
         <TextBox x:Name="SearchCriteria" TextWrapping="Wrap" Text="" Margin="10,10,0,10" Grid.ColumnSpan="3"/>
-        <Image x:Name="IconImage" Margin="10" Grid.Row="1" Grid.RowSpan="3"/>
-        <TextBlock x:Name="GeoLocation" TextWrapping="Wrap" Text="" Margin="10" Grid.Row="1" Grid.Column="1"/>
-        <TextBlock x:Name="LatitudeLongitude" TextWrapping="Wrap" Text="" Margin="10" Grid.Row="2" Grid.Column="1"/>
-        <TextBlock x:Name="ElevationValue" TextWrapping="Wrap" Text="" Margin="10" Grid.ColumnSpan="2" Grid.Row="1" Grid.Column="2"/>
-        <TextBlock x:Name="LastUpdateValue" TextWrapping="Wrap" Text="" Margin="10" Grid.Row="2" Grid.ColumnSpan="2" Grid.Column="2"/>
-        <TextBlock x:Name="CurrentWeather" TextWrapping="Wrap" Text="" Margin="10" Grid.Row="3" Grid.Column="1"/>
-        <TextBlock x:Name="Temperature" TextWrapping="Wrap" Text="" Margin="10" Grid.Row="4" Grid.ColumnSpan="2"/>
-        <TextBlock x:Name="FeelsLike" TextWrapping="Wrap" Text="" Margin="10" Grid.Row="5" Grid.ColumnSpan="2"/>
-        <TextBlock x:Name="WindType" TextWrapping="Wrap" Text="" Margin="10" Grid.Row="6" Grid.ColumnSpan="2"/>
-        <TextBlock x:Name="WindDirection" TextWrapping="Wrap" Text="" Margin="10,10,10,82" Grid.Row="7" Grid.ColumnSpan="2"/>
-        <TextBlock x:Name="Humidity" TextWrapping="Wrap" Text="" Margin="10" Grid.Row="4" Grid.ColumnSpan="2" Grid.Column="2"/>
-        <TextBlock x:Name="Visibility" TextWrapping="Wrap" Text="" Margin="10" Grid.Row="5" Grid.ColumnSpan="2" Grid.Column="2"/>
-        <TextBlock x:Name="UV" TextWrapping="Wrap" Text="" Margin="10" Grid.Row="6" Grid.ColumnSpan="2" Grid.Column="2"/>
-        <TextBlock x:Name="Precipitation" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" Margin="10,10,0,82" Width="291" Grid.Row="7" Grid.ColumnSpan="2" Grid.Column="2"/>
+        <Image x:Name="IconImage" Margin="10" Grid.Row="2" Grid.RowSpan="3"/>
+        <TextBlock x:Name="GeoLocation" TextWrapping="Wrap" Text="" Margin="10" Grid.Row="2" Grid.Column="1"/>
+        <TextBlock x:Name="LatitudeLongitude" TextWrapping="Wrap" Text="" Margin="10" Grid.Row="3" Grid.Column="1"/>
+        <TextBlock x:Name="ElevationValue" TextWrapping="Wrap" Text="" Margin="10,9,10,11" Grid.ColumnSpan="2" Grid.Row="2" Grid.Column="2"/>
+        <TextBlock x:Name="LastUpdateValue" TextWrapping="Wrap" Text="" Margin="10,9,10,11" Grid.Row="3" Grid.ColumnSpan="2" Grid.Column="2"/>
+        <TextBlock x:Name="CurrentWeather" TextWrapping="Wrap" Text="" Margin="10" Grid.Row="4" Grid.Column="1"/>
+        <TextBlock x:Name="Temperature" TextWrapping="Wrap" Text="" Margin="10" Grid.Row="5" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="FeelsLike" TextWrapping="Wrap" Text="" Margin="10" Grid.Row="6" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="WindType" TextWrapping="Wrap" Text="" Margin="10" Grid.Row="7" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="WindDirection" TextWrapping="Wrap" Text="" Margin="10,10,10,46" Grid.Row="8" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="Humidity" TextWrapping="Wrap" Text="" Margin="10,9,10,11" Grid.Row="5" Grid.ColumnSpan="2" Grid.Column="2"/>
+        <TextBlock x:Name="Visibility" TextWrapping="Wrap" Text="" Margin="10,9,10,11" Grid.Row="6" Grid.ColumnSpan="2" Grid.Column="2"/>
+        <TextBlock x:Name="UV" TextWrapping="Wrap" Text="" Margin="10,9,10,11" Grid.Row="7" Grid.ColumnSpan="2" Grid.Column="2"/>
+        <TextBlock x:Name="Precipitation" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" Margin="10,10,0,46" Width="291" Grid.Row="8" Grid.ColumnSpan="2" Grid.Column="2"/>
+        <TextBlock x:Name="textBlock" Margin="10,35,10,10" TextWrapping="Wrap" Text="Input location (zip code, &quot;city, state&quot;, or &quot;city, country&quot;) " Grid.RowSpan="2" Grid.ColumnSpan="2"/>
     </Grid>
 </Window>

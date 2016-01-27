@@ -34,8 +34,17 @@ namespace _10_WeatherApp
         {
             try
             {
-                result = WeatherService.GetWeatherFor(SearchCriteria.Text);
-                PrintResults();
+                string[] array = SearchCriteria.Text.Split(',');
+                if (array.Length == 1)
+                {
+                    result = WeatherService.GetWeatherFor(SearchCriteria.Text);
+                    PrintResults();
+                }
+                else
+                {
+                    result = WeatherService.GetWeatherFor(array[0], array[1]);
+                    PrintResults();
+                }
             }
             catch (Exception)
             {
@@ -71,12 +80,5 @@ namespace _10_WeatherApp
             UV.Text = ("UV: " + result.current_observation.UV);
             Precipitation.Text = ("Precipitation: " + result.current_observation.precip_today_string);
         }
-
-
-        // how to load images
-        // create an image in XAML
-        // 
-
-        // how to separate API call code from WPF code
     }
 }

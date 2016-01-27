@@ -18,7 +18,7 @@ namespace _10_WeatherApp.Core
         {
             using (WebClient wc = new WebClient())
             {
-                string json = wc.DownloadString($"http://api.wunderground.com/api/{apiKey}/conditions/q/CA/{zipCode}.json");
+                string json = wc.DownloadString($"http://api.wunderground.com/api/{apiKey}/conditions/q/{zipCode}.json");
 
                 // var o = JObject.Parse(json);
                 // var results = new ConditionsResult();
@@ -31,7 +31,7 @@ namespace _10_WeatherApp.Core
             }
         }
 
-        public static ConditionsResult GetWeatherFor(string state, string city)
+        public static ConditionsResult GetWeatherFor(string city, string state)
         {
             using (WebClient wc = new WebClient())
             {
